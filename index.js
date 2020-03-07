@@ -7,8 +7,12 @@ const bodyParser=require('body-parser');
 const session=require('express-session');
 let port=process.env.PORT || 3000;
 
-// models
-//
+
+app.use(session({
+  secret:'24cc-4d44-wrrq38s',
+  resave:true,
+  saveUninitialized:true
+}));
 
 app.use(basicAuth({
   users:{
@@ -20,14 +24,9 @@ app.use(basicAuth({
   realm:'Imb4T3st4pp'
 }));
 
-app.use(session({
-  secret:'24cc-4d44-wrrq38s',
-  resave:true,
-  saveUninitialized:true
-}));
-
 app.get('/', (req,res)=>{
-  res.send('Hello');
+  console.log(req);
+  res.send("You're logged in");
 });
 
 
