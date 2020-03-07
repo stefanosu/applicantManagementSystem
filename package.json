@@ -1,0 +1,21 @@
+{
+  "name": "appmanagementsystem",
+  "version": "1.0.0",
+  "description": "A management system that efficiently tracks applications from Google Forms applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "keywords": [
+    "application",
+    "management"
+  ],
+  "author": "Bri, Rita, Stefano",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "pg": "^7.18.2",
+    "scrypt-js": "^3.0.0"
+  }
+}
