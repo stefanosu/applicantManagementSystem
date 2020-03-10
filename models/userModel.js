@@ -6,5 +6,8 @@ const User=db.define(
    name: {
     type: Sequelize.TEXT,
   },
+  password: {
+    type: Sequelize.TEXT
+  },
   { timestamps: false }
 );
