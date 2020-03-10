@@ -1,12 +1,11 @@
 const express=require('express');
 const app=express();
 const router=require('./routes/routes.js');
-const db=require('./database/database.js');
+const db=require('./models/database.js');
 const basicAuth=require('express-basic-auth');
 const scrypt=require('scrypt-js');
 const pg=require('pg');
 const hstore=require('pg-hstore');
-const sequelize=require('sequelize');
 const bodyParser=require('body-parser');
 const session=require('express-session');
 
