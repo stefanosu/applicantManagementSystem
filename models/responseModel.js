@@ -5,7 +5,8 @@ const Response=db.define(
   'responses',
   {
     type: Sequelize.TEXT,
-    question_id:Sequelize.NUMBER,
-    email:Sequelize.TEXT
-  }
+    question_id:Sequelize.INTEGER,
+    email: Sequelize.TEXT
+  },
+  { timestamps: false }
 )

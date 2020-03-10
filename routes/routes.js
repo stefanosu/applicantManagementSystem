@@ -1,4 +1,4 @@
-module.exports=function(app, db){
+module.exports=function(app, db, form, question, response, user){
 
   app.get('/', (req,res)=>{
     console.log(req);
