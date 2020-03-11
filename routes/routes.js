@@ -1,5 +1,19 @@
 module.exports=function(app, db, form, question, response, user){
 
+  let dd_options = {
+    'response_code':true,
+    'tags': ['app:my_app']
+      }
+  
+  let connect_datadog = require('connect-datadog')(dd_options);
+  
+  // Add your other middlewares
+  app.use();
+  
+  // Add the datadog-middleware before your router
+  app.use(connect_datadog);
+  app.use(router);
+
   app.get('/', (req,res)=>{
     console.log(req);
     res.send("You're logged in");
