@@ -13,6 +13,7 @@
   "author": "Bri, Rita, Stefano",
   "license": "MIT",
   "dependencies": {
+    "connect-datadog": "0.0.9",
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
     "express-session": "^1.17.0",
